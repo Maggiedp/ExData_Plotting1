@@ -13,6 +13,8 @@ power.df$date.time <- power.df$Date + power.df$Time
 
 ## plot 4
 png("plot4.png")
+par(mfrow=c(2,2))
+
 plot(power.df$date.time, power.df$Global_active_power, ylab='Global Active Power', xlab='', type='l')
 
 plot(power.df$date.time, power.df$Voltage, xlab='datetime', ylab='Voltage', type='l')
